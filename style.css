@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(189, 253, 255);
+}
+
+*::selection {
+    background: transparent;
+}
+
+.container {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
+}
+
+.button-5 {
+    background-color: rgb(60, 153, 234);
+}
+
+
+
+.open-1 {
+    transform: translate(110%);
+    background-color: aqua;
+}
+
+.open-2 {
+    transform: translate(-110%);
+    background-color: gainsboro;
+}
+
+.open-3 {
+    transform: translateY(110%);
+    background-color: aliceblue;
+}
+
+.open-4 {
+    transform: translateY(-110%);
+    background-color: aquamarine;
+}
